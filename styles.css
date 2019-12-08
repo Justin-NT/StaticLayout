@@ -1,0 +1,634 @@
+/*--------- Default Settings --------------- */
+body {
+  margin: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f5f6f7;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #292b2c;
+  margin: 0px;
+  height: 100%;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+  display: block;
+}
+
+button {
+  padding: 0 0 0 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* --------- Header Section, Navbar + image */
+
+#navbar-container {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  justify-content: space-between;
+  z-index: 1;
+  position: fixed;
+  background-color: white;
+}
+
+#hulu-navbar-logo {
+  width: 60px;
+  height: 50px;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 12px;
+}
+
+#login {
+  letter-spacing: 1px;
+  padding: 23px 0 17px;
+  margin: 4px 0px;
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  color: #5e6573;
+}
+
+#login-button-container {
+  display: flex;
+  height: 55px;
+  min-width: 100px;
+  margin-top: 4px;
+}
+
+#initial-img {
+  width: 100%;
+  height: 550px;
+  background-image: url("/assets/1600-lifestyle-background@2x_1.jpg");
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: auto;
+  z-index: 0;
+}
+
+#heading-text-section {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  line-height: 1.3;
+  text-align: center;
+}
+
+#heading-subtext-1 {
+  padding-top: 0px;
+  font-size: 50px;
+  height: 80px;
+  line-height: 32px;
+  font-weight: 0;
+  letter-spacing: 0.5px;
+  position: relative;
+  font-family: sArial, Helvetica, sans-serif;
+  margin-top: 190px;
+  margin-bottom: 0px;
+}
+
+#heading-subtext-2 {
+  position: relative;
+  font-size: 24px;
+}
+
+#heading-subtext-3 {
+  font-size: 16px;
+  margin-top: 20px;
+  position: relative;
+}
+
+#legal-text {
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+#initial-button-wrapper {
+  width: 250px;
+  height: 50px;
+  background-color: white;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+#initial-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: auto;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#initial-button-wrapper:hover,
+#initial-button-wrapper:focus {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 2px 2px rgba(134, 141, 155, 0.2);
+  transform: translateY(-0.15em);
+}
+
+/* ---------- Ribbon Section ------------ */
+
+#ribbon-flex {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#ribbon {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(
+    318.68deg,
+    #0f495c 0%,
+    #0d3640 49.72%,
+    #08141f 100%
+  );
+  padding: 25px 40px;
+}
+
+#logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 80px;
+  min-width: 0px;
+}
+
+#logos {
+  /* width: 355px;
+  height: 80px;
+  background-image: url("/assets/D+_Logo_0_1_2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0; */
+  left: 40px;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  #logos {
+    max-width: 200px;
+  }
+}
+
+#ribbon-text-section {
+  display: flex;
+  max-height: 98px;
+  max-width: 750px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 8px 0 30px;
+  margin-left: 60px;
+  flex-flow: column wrap;
+}
+
+#bundle {
+  height: 21px;
+  color: #2dbd9d;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 13px;
+  padding-bottom: 8px;
+  margin: 10px 0 0 0;
+}
+
+#more-details {
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 14px;
+  line-height: 15px;
+  text-decoration: underline;
+  padding: 15px 0 0 0;
+}
+
+#buy-now-section {
+  display: flex;
+  position: relative;
+  height: 115px;
+  width: 570px;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#buy-now-button-container {
+  position: relative;
+  min-width: 114px;
+  height: 58px;
+  display: flex;
+}
+
+#buy-now-button {
+  height: 58px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  display: flex;
+  /* padding: 0px 20px; */
+  min-width: 114px;
+  font-size: 14px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#buy-now-button:hover,
+#buy-now-button:focus {
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-0.15em);
+}
+
+#buy-now-anchor {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#terms-apply {
+  font-size: 10px;
+  color: white;
+  opacity: 0.7;
+  height: 20px;
+  align-self: flex-end;
+  text-decoration: underline;
+  padding: 2px 28px 0 0;
+}
+
+#ribbon-text {
+  font-size: 24px;
+  color: white;
+  height: 25px;
+  max-width: 550px;
+}
+
+/* --------- Large Image Section --------- */
+
+#second-img {
+  flex-shrink: 0;
+  max-width: 86%;
+  height: auto;
+  /* background-size: cover; */
+}
+
+/*--------- Plan Selection Section */
+
+#plan-container {
+  padding-top: 40px;
+  display: flex;
+  width: 100%;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+#plan-container h2 {
+  height: 52px;
+  width: 100%;
+  margin: 0 0 16px;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 52px;
+  color: #1e1e1e;
+  font-stretch: normal;
+  text-align: center;
+}
+
+#plan-container p {
+  text-align: center;
+  height: 24px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: 24px;
+  color: #5e6573;
+}
+
+#plan-selection {
+  display: flex;
+  height: 914px;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.plan-card {
+  flex: 1 1 0;
+  position: relative;
+  margin: 12px;
+  padding: 40px 0px 48px;
+  max-width: 536px;
+  background-color: white;
+  box-shadow: 0 2px 20px 5px rgba(134, 141, 155, 0.2);
+}
+
+.plan-card:hover,
+.plan-card:focus {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 10px 10px 10px rgba(134, 141, 155, 0.2);
+  transform: translateY(-1em);
+  border-top: green 3px solid;
+}
+
+.plan-card:hover .select-plan-button {
+  background-color: #232323;
+  color: white;
+  border: none;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.plan-card:focus .select-plan-button {
+  background-color: #232323;
+  color: white;
+  border: none;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+#plan-card-1 {
+  max-height: 570px;
+}
+
+#plan-card-2 {
+  max-height: 750px;
+}
+
+.card-header {
+  text-align: center;
+  justify-content: space-between;
+}
+
+#hulu {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #5e6573;
+  margin: 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.card-txt {
+  color: #5e6573;
+  font-weight: 300;
+}
+
+#card1-trial {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-stretch: normal;
+  line-height: 32px;
+}
+
+#plan-card-price-line {
+  display: block;
+}
+
+#price1 {
+  font-size: 48px;
+  display: inline-block;
+}
+
+#month {
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 0 16px;
+}
+
+.select-plan-button-wrapper {
+  text-align: center;
+  margin: 15px auto 0;
+  width: 100%;
+  max-width: 344px;
+  transform: translateY(0);
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+  margin-bottom: 65px;
+}
+
+.select-plan-button {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(0);
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+  border: 1.5px solid #aeb4bf;
+  color: #1e1e1e;
+  background: transparent;
+  width: 100%;
+  padding: 17px 0px 17px 0px;
+}
+
+.select-plan-button:hover {
+  background-color: #232323;
+  color: white;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0);
+  transform: translateY(-0.2em);
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.plan-selection-body {
+  max-height: 401px;
+  display: flex;
+  align-content: center;
+  padding: 32px 50px;
+  position: relative;
+}
+
+.plan-selection-body-list {
+  list-style: url(/assets/icon_green_check.svg);
+  padding: 12px 0px;
+  color: #4c5260;
+  margin-top: -15px;
+}
+
+#learn-more-section {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  margin-top: -45px;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+#learn-more {
+  color: #3370bb;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+#learn-more-txt {
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  font-size: 14px;
+  color: #aeb4bf;
+}
+
+hr {
+  border: none;
+  background-color: #ebedf2;
+  color: #ebedf2;
+  height: 1px;
+}
+
+#see-add-ons {
+  font-size: 18px;
+  font-weight: 400;
+  font-stretch: normal;
+  color: #868d9b;
+  line-height: 18px;
+  position: absolute;
+  bottom: 0;
+  height: 66px;
+  width: 100%;
+  margin: 0 auto 0;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #ebedf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--------- Free Trial Section --------- */
+
+#free-trial {
+  display: flex;
+  height: 350px;
+  width: 100%;
+  position: relative;
+  top: 100px;
+  background-color: white;
+  flex-flow: row wrap;
+}
+
+#free-trial-headline {
+  display: flex;
+  height: 200px;
+  margin: 0 0 16px;
+  width: 650px;
+  position: relative;
+  bottom: 100px;
+  right: 300px;
+  opacity: 0.95;
+  flex-flow: row wrap;
+  top: 60px;
+}
+
+#watch-thousands {
+  max-width: 640px;
+  opacity: 0.9;
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 0;
+  color: #1e1e1e;
+}
+
+#free-trial-button-container {
+  width: 250px;
+  height: 70px;
+  justify-content: flex-start;
+  flex-flow: wrap row;
+  bottom: 0px;
+  position: relative;
+  bottom: 40px;
+}
+
+#free-trial-button-wrapper {
+  display: flex;
+  text-align: center;
+  margin: 15px auto 0;
+  width: 100%;
+  max-width: 344px;
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+#free-trial-button {
+  position: relative;
+  margin-right: 0px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  border: none;
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+  color: #fcfcfc;
+  background: #262930;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  display: block;
+}
+
+#free-trial-button:hover,
+#free-trial-button:focus {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 10px 10px 10px rgba(134, 141, 155, 0.2);
+  transform: translateY(-0.15em);
+}
+
+#third-img {
+  width: 536px;
+  margin: 0px;
+  bottom: 72px;
+  height: 422px;
+  background-image: url("/assets/phonePic.png");
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 1100px;
+}
+
+/* section {
+    position: relative;
+    background-color: turquoise;
+    height: 100px;
+    width: 100px;
+} */
+
+/*--------- Footer Section ---------- */
+
+#footer {
+  height: 406.36px;
+  width: 100%;
+}

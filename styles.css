@@ -74,7 +74,7 @@ button {
 #initial-img {
   width: 100%;
   height: 550px;
-  background-image: url("/assets/1600-lifestyle-background@2x_1.jpg");
+  background-image: url("./assets/1600-lifestyle-background@2x_1.jpg");
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
@@ -468,7 +468,7 @@ button {
 }
 
 .plan-selection-body-list {
-  list-style: url(/assets/icon_green_check.svg);
+  list-style: url(./assets/icon_green_check.svg);
   padding: 12px 0px;
   color: #4c5260;
   margin-top: -15px;
@@ -611,7 +611,7 @@ hr {
   margin: 0px;
   bottom: 72px;
   height: 422px;
-  background-image: url("/assets/phonePic.png");
+  background-image: url("./assets/phonePic.png");
   z-index: 1;
   background-size: contain;
   background-repeat: no-repeat;
